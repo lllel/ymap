@@ -1,0 +1,67 @@
+@import "style_external/normalize";
+@import "variables";
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+  url("./content/fonts/roboto-regular.woff2") format("woff2"),
+  url("./content/fonts/roboto-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  font-family: "Roboto", "Arial", sans-serif;
+  min-width: $mobile-width;
+  margin: 0 auto;
+  overflow-x: hidden; //for ie bugs
+}
+
+.my-balloon {
+  display: flex;
+  padding: 4px 10px;
+  height: 75px;
+  position: relative;
+  bottom: 80px;
+  left: -10px;
+  width: 158px;
+  font-size: 11px;
+  line-height: 15px;
+  color: #333333;
+  background-color: #FFFFF6;
+  border: 1px solid #CDB7B5;
+  border-radius: 6px;
+}
+.close {
+  margin-top: 3px;
+  text-decoration: none;
+}
+
+.ways-container {
+  margin-left: 25px;
+  padding: 0;
+}
+
+.way-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+
+  & span {
+    margin-left: 20px;
+    font-size: 11px;
+    color: #7d7d7d;
+    cursor: pointer;
+  }
+}

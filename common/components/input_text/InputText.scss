@@ -1,0 +1,65 @@
+.component-input-text {
+  display: block;
+  width: 100%;
+  height: 25px;
+  padding: 2px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.component-input-text-error {
+  border: 1px solid #F0A3A3;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 0, 0, 0.3);
+}
+
+.component-input-text:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.component-input-text:disabled {
+  cursor: text;
+  background-color: #eeeeee;
+}
+
+.component-input-text-buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #555;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+.component-input-text-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.component-input-text-button-any {
+  padding: 0 6px;
+  color: #606060;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 12px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
